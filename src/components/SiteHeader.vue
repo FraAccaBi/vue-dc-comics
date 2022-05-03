@@ -1,9 +1,10 @@
 <template>
-    <div>
-        <header class="container-fluid d-flex">
-            <img class="" src="../assets/img/dc-logo.png" alt="">
-            <nav class="d-flex">
-                <ul>
+    <div class="container-fluid">
+        <header class="row d-flex">
+            <img class="col-1 align-self-center" src="../assets/img/dc-logo.png" alt="">
+            <div class="col-3"></div>
+            <nav class="col-8 pt-5">
+                <ul class="list-unstyled text-uppercase d-flex justify-content-around">
                     <li>Characters</li>
                     <li>Comics</li>
                     <li>Movies</li>
@@ -27,5 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.container-fluid{
+  margin-top: -3rem  
+}
 </style>
