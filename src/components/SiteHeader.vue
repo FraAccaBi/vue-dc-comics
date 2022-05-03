@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <header class="row d-flex">
-            <img class="col-1 align-self-center" src="../assets/img/dc-logo.png" alt="">
+            <img class="col-1 align-self-start" src="../assets/img/dc-logo.png" alt="">
             <div class="col-3"></div>
             <nav class="col-8 py-4">
                 <ul class="list-unstyled text-uppercase d-flex justify-content-around">
@@ -33,7 +33,7 @@ export default {
 }
 
 li{
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 li:hover{
     font-weight: 600;

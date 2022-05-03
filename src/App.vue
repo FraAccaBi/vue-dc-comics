@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <SiteHeader />
+    <SiteHeader/>
+    <SiteFooter/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import SiteHeader from './components/SiteHeader.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    SiteHeader
+    SiteHeader,
+    SiteFooter
   }
 }
 </script>
