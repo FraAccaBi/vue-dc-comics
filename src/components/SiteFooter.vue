@@ -43,11 +43,15 @@ export default {
 
 <style scoped lang="scss">
 .slider{
-    background-color: #0c7cec
-}
-.slider-text{
+    background-color: #0c7cec;
+
+    .slider-text{
     color: white;
     text-transform: uppercase;
+    }
+    
+
 }
+
 
 </style>
