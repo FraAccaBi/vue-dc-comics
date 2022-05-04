@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row row-cols-2">
-                <div class="col"></div>
+                <div class="col">
+                    <button>Sign-up now!</button>
+                </div>
                 <div class="col d-flex justify-content-evenly align-items-center">
                     <span>Follow us</span>
                     <div v-for="item in cards" :key="item.id">
@@ -59,7 +61,7 @@ export default {
 
 .container-fluid{
     padding: 1.5rem;
-    height: 80px;
+    height: 90px;
     background-color:  $footer-bottom;
 }
 span{
@@ -70,6 +72,11 @@ span{
 img{
     height: 30px;
 }
-
+button{
+    background-color:  $footer-bottom;
+    color: $text-primary;
+    border: 2px solid $dc-primary;
+    padding: 0.5rem;
+}
 
 </style>
