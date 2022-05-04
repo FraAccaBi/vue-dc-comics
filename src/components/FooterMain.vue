@@ -7,7 +7,7 @@
                         <div class="col" v-for="item in cards" :key="item.id">
                             <span class="title">{{item.name}}</span>
                             <ul class="list-unstyled" >
-                               <li v-for="links in cards.item" :key="links.nr"> {{links.text}}</li>
+                               <li v-for="links in item.links" :key="links.nr"> {{links.text}}</li>
                             </ul>
                         </div>
                     </div>
