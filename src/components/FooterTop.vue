@@ -64,6 +64,7 @@ export default {
 .slider{
     background-color: $dc-primary;
     padding-left: 6rem;
+    height: 80px;
 
     li{
     color: white;

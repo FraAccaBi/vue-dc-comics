@@ -3,9 +3,9 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 row-cols-3">
-                        <div class="col" v-for="item in cards" :key="item.id">
-                            <span class="title">{{item.name}}</span>
+                    <div class="col-4 row-cols-3 d-flex flex-wrap">
+                        <div class="col " v-for="item in cards" :key="item.id">
+                            <span class="title text-uppercase">{{item.name}}</span>
                             <ul class="list-unstyled" >
                                <li v-for="links in item.links" :key="links.nr"> {{links.text}}</li>
                             </ul>
@@ -182,6 +182,20 @@ export default {
 <style scoped lang="scss">
 
 @import '~@/assets/scss/variables.scss';
+
+.container-fluid{
+    background-image: url('../../public/img/footer-bg.jpg');
+    padding-top: 3rem;
+
+    .title{
+        color: white;
+    };
+    li{
+        color: $text-secondary;
+        font-size: smaller;
+    }
+
+}
 
 
 </style>
