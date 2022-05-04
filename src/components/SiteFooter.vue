@@ -3,29 +3,9 @@
         <div class="container-fluid slider">
             <ul class="container row row-cols-5 list-unstyled">
                 <li v-for="item in cards" :key="item.id">
-                    <img class="h-100 w-50" :src="'~@/assets/img/' + item.link" :key="item.id" alt="">
+                    <img :src="'./img/' + item.link" :key="item.id" alt="">
                      {{item.text}} 
                 </li>
-                <div class="digital col">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    <div class="slider-text">Digital Comics</div>
-                </div>
-                <div class="merchandise col">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                    <div class="slider-text">DC Merchandise</div>
-                </div>
-                <div class="subscription col">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                    <div class="slider-text">Subscription</div>
-                </div>
-                <div class="shops col">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                    <div class="slider-text">Comic shop locator</div>
-                </div>
-                <div class="visa col">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                    <div class="slider-text">dc power visa</div>
-                </div>
             </ul>
         </div>
         <div class="main_footer">
