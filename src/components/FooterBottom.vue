@@ -1,5 +1,16 @@
 <template>
-    <div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col"></div>
+                <div class="col">
+                    <span>Follow us</span>
+                    <div v-for="item in cards" :key="item.id">
+                        <img :src="'./img/' + item.link" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
                 
     </div>
 </template>
@@ -12,14 +23,29 @@ export default {
           cards: [
               {
                   id: 1,
-                  text: 'Digital comics',
-                  link: 'buy-comics-digital-comics.png'
+                  title: 'Facebook',
+                  link: 'footer-facebook.png'
               },
               {
                   id: 2,
-                  text: 'DC Merchandise',
-                  link: 'buy-comics-merchandise.png'
-              }
+                  title: 'Twitter',
+                  link: 'footer-twitter.png'
+              },
+              {
+                  id: 3,
+                  title: 'Youtube',
+                  link: 'footer-youtube.png'
+              },
+              {
+                  id: 4,
+                  title: 'Pinterest',
+                  link: 'footer-pinterest.png'
+              },
+              {
+                  id: 5,
+                  title: 'Periscope',
+                  link: 'footer-periscope.png'
+              },
 
           ]
       }
@@ -31,6 +57,16 @@ export default {
 
 @import '~@/assets/scss/variables.scss';
 
+.container-fluid{
+    height: 80px;
+    background-color:  $footer-bottom;
+}
+span{
+    color: $dc-primary;
+}
+img{
+    height: 50px;
+}
 
 
 </style>
