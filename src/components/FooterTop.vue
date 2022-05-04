@@ -1,12 +1,14 @@
 <template>
     <div>
         <div class="container-fluid slider">
-            <ul class="container row row-cols-5 list-unstyled">
+            <div class="container">
+                <ul class="row row-cols-5 list-unstyled">
                 <li v-for="item in cards" :key="item.id">
                     <img :src="'./img/' + item.link" :key="item.id" alt="">
                      {{item.text}} 
                 </li>
             </ul>
+            </div>
         </div>
         <div class="main_footer">
             
@@ -63,7 +65,6 @@ export default {
 
 .slider{
     background-color: $dc-primary;
-    padding-left: 6rem;
     height: 80px;
 
     li{
