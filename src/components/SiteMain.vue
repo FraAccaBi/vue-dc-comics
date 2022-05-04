@@ -1,15 +1,14 @@
 <template>
     <div>
         <div class="container-fluid jumbotron"></div>
-        <div class="container-fluid">
+        <div class="container-fluid comics">
             <div class="container">
                 <div class="row row-cols-6 flex-wrap ">
-                    <div class="col d-flex ">
-                        <ComicsList 
+                    <ComicsList class="col" v-for="(serie, index) in cards" :key="index"
                         :serie="cards[index].series"
-                        :thumb="cards[index].thumb"
-                        v-for="(serie, index) in cards" :key="index" />
-                    </div>
+                        :thumb="cards[index].thumb" />
+                        
+                    
                 </div>
             </div>
         </div>
@@ -116,5 +115,12 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.comics{
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    background-color: $main-bg;
+    color: $text-primary;
+}
+
 
 </style>
