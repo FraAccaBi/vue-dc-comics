@@ -2,14 +2,14 @@
     <div>
         <div class="container-fluid jumbotron"></div>
         <div class="container-fluid comics">
-            <div class="container">
+            <div class="container position-relative">
+                <button class="current-badge">Current Series</button>
                 <div class="row row-cols-6 flex-wrap ">
                     <ComicsList class="col" v-for="(serie, index) in cards" :key="index"
                         :serie="cards[index].series"
                         :thumb="cards[index].thumb" />
-                        
-                    
                 </div>
+                <button class="position-absolute top-100 start-50 translate-middle">Load More</button>
             </div>
         </div>
         
@@ -120,6 +120,22 @@ export default {
     padding-bottom: 6rem;
     background-color: $main-bg;
     color: $text-primary;
+}
+button{
+    background-color:  $dc-primary;
+    color: $text-primary;
+    border: 2px solid $dc-primary;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.current-badge{
+    position: absolute;
+    top:-4.5rem;
+    left:-0.5rem;
+    cursor:default;
 }
 
 
